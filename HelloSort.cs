@@ -11,8 +11,8 @@ namespace HelloSortSample
 		    string[] mineOrd ={ "aa","ab", "ac", "åå" };
 			skrivut(mineOrd, "Start");
 			
-            Array.Sort(mineOrd);
-			var culture = new CultureInfo("nn-NO", true);
+			Array.Sort(mineOrd);
+			var culture = new CultureInfo("nb-NO", true);
 			mineOrd =  mineOrd.OrderBy(d => d, StringComparer.Create(culture, false)).ToArray();
 		    skrivut(mineOrd, "Sortert");
 			
